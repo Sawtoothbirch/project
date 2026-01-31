@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akan Name Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Akan Name Generator</h1>
+        <p>This application will calculate the user's birthday based on their birthdate and assign the corresponding Akan name</p>
+        <h2>Please fill the following table</h2>
+        <p>On day please enter your birth day month and year in form of numbers e.g 24 04 2004</p>
+    <form id="akan-form" novalidate>
+    <label for="day">Day</label>
+    <input id="day" name="day" type="number" min="1" max="31" required />
+
+    <label for="month">Month</label>
+    <input id="month" name="month" type="number" min="1" max="12" required />
+
+    <label for="year">Year</label>
+    <input id="year" name="year" type="number" min="1000" max="9999" required />
+
+    <fieldset>
+      <legend>Gender</legend>
+      <label><input type="radio" name="gender" value="male" required /> Male</label>
+      <label style="margin-left:1rem"><input type="radio" name="gender" value="female" /> Female</label>
+    </fieldset>
+
+    <button type="submit">Find Akan Name</button>
+  </form>
+  <div id="akan-result" class="result" aria-live="polite"></div>
+    <script src="script.js"></script>
+
+    </body>
+</html>
